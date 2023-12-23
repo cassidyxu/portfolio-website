@@ -2,6 +2,7 @@
     // background: #14325c;
     width: 100%;
     color: white;
+    z-index: 999;
 
     .logo {
         display: block;
@@ -10,6 +11,13 @@
         width: 40px;
         height: auto;
         float: left;
+    }
+
+    li {
+        font-weight: 450;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
     }
 
 }
