@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/images/logo2.png'
 import './Navbar.scss'
 
@@ -31,24 +31,24 @@ const Navbar = () => {
                 <ul className={`${isOpen ? 'flex' : 'hidden'
                     } md:flex flex-col md:flex-row space-x-4 md:mt-0 mt-4 pr-4 bg-white text-primaryColor md:bg-primaryColor md:text-white`}>
                     <li className="ml-4 mt-4 md:m-0">
-                        <Link to="/about">
+                        <NavLink to="/about">
                             About
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="mt-4 md:m-0">
-                        <Link to="/projects">
+                        <NavLink to="/projects">
                             Projects
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="mt-4 md:m-0">
-                        <Link to="/travel">
+                        <NavLink to="/travel">
                             Travel
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="mt-4 mb-4 md:m-0">
-                        <Link to="/resume">
+                        <NavLink to="/resume">
                             Resume
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
