@@ -1,9 +1,8 @@
-import Navbar from '../Navbar/Navbar';
+import './About.scss'
 
 const About = () => {
     return (
-        <div>
-            <Navbar />
+        <div className="about-page h-screen">
             <div className="page pt-16">
                 <h1>Hi from About</h1>
             </div>
