@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.project-card {
+    position: relative;
+    border-radius: 15px;
+    background: $primary-color;
+    color: white;
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .learn-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-color: white;
+        border-width: 1px;
+        padding: 8px
+    }
+}

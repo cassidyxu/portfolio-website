@@ -1,11 +1,14 @@
+@import '../../App.scss';
+
 .home-page {
     color: white;
+    font-family: 'Rubik', sans-serif;
+    background: $primary-color;
 
     .intro {
-        color: #e3efff;
+        color: $secondary-color;
         font-size: 56px;
         font-weight: bold;
-        font-family: 'RubikDoodleShadow', sans-serif;
     }
 
 }

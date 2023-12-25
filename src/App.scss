@@ -1,24 +1,25 @@
 $primary-color: #214373;
-$secondary-color: #86aecf;
+$secondary-color: #e3efff;
+$light-blue: #86aecf;
 
 @font-face {
   font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Regular.ttf') format(ttf);
+  src: url('../src/assets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('./assets/fonts/Lato-Regular.ttf') format(ttf);
+  src: url('../src/assets/fonts/Lato-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Rubik';
-  src: url('./assets/fonts/Rubik-Regular.ttf') format(ttf);
+  src: url('../src/assets/fonts/Rubik-Regular.ttf');
 }
 
 @font-face {
   font-family: 'RubikDoodleShadow';
-  src: url('./assets/fonts/RubikDoodleShadow-Regular.ttf') format(ttf);
+  src: url('../src/assets/fonts/RubikDoodleShadow-Regular.ttf');
 }
 
 body {

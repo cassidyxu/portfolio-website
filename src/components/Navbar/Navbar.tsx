@@ -31,24 +31,29 @@ const Navbar = () => {
                     <ul className={`${isOpen ? 'flex' : 'hidden'
                         } md:flex flex-col md:flex-row space-x-4 md:mt-0 mt-4 pr-4 bg-white text-primaryColor md:bg-primaryColor md:text-white`}
                     >
-                        <li className="ml-4 mt-4 md:m-0">
+                        {/* <li className="ml-4 mt-4 md:m-0">
                             <NavLink to="/about">
                                 About
                             </NavLink>
-                        </li>
-                        <li className="mt-4 md:m-0">
+                        </li> */}
+                        {/* <li className="ml-4 mt-4 md:m-0">
                             <NavLink to="/projects">
                                 Projects
                             </NavLink>
-                        </li>
-                        <li className="mt-4 md:m-0">
+                        </li> */}
+                        <li className="ml- 4 mt-4 mb-4 md:m-0">
                             <NavLink to="/travel">
                                 Travel
                             </NavLink>
                         </li>
-                        <li className="mt-4 mb-4 md:m-0">
+                        {/* <li className="mt-4 mb-4 md:m-0">
                             <NavLink to="/resume">
                                 Resume
+                            </NavLink>
+                        </li> */}
+                        <li className="mt-4 mb-4 md:m-0">
+                            <NavLink to="/contact">
+                                Contact
                             </NavLink>
                         </li>
                     </ul>

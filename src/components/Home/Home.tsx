@@ -42,9 +42,9 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
+            {/* <div id="aboutPage">
                 <About />
-            </div>
+            </div> */}
 
         </div>
 
