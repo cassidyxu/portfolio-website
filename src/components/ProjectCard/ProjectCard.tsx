@@ -20,23 +20,29 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 
     const [isHovered, setIsHovered] = useState(false);
     const [isButtonHovered, setIsButtonHovered] = useState(false);
+    const [isTapped, setIsTapped] = useState(false)
 
     // const projectImage = './public/projects/lex-heroes/png';
     // const projectImage = require('./lex-heroes.png').default;
     // console.log("hi " + projectImage)
     // console.log("Project Image:", projectImage);
 
+    const handleCardTap = () => {
+        setIsTapped(!isTapped);
+    }
+
 
     return (
         <motion.div
             className="project-card m-2"
-        // onHoverStart={() => setIsHovered(true)}
-        // onHoverEnd={() => setIsHovered(false)}
+            // onHoverStart={() => setIsHovered(true)}
+            // onHoverEnd={() => setIsHovered(false)}
+            onTap={handleCardTap}
         >
             <motion.button
                 className="learn-button rounded-full"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: isHovered ? 1 : 0 }}
+                animate={{ opacity: (isHovered || isTapped) ? 1 : 0 }}
                 whileHover={{ backgroundColor: 'red' }}
                 transition={{ duration: 0.3 }}
             >
@@ -58,8 +64,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                 // src={require('../../assets/images/projects/lex-heroes.png').default}
                 // alt="lex heroes"
                 alt={project.title}
+                initial={{ scale: 1 }}
+                animate={{ scale: (isHovered || isTapped) ? 1.1 : 1, opacity: isTapped ? 0 : 1 }}
                 whileHover={{ opacity: isHovered ? 0 : 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.5 }}
                 onHoverStart={() => setIsHovered(true)}
                 onHoverEnd={() => setIsHovered(false)}
             />

@@ -10,6 +10,7 @@ const Projects = () => {
         <div className="projects-page flex justify-center py-16 px-2">
             <div className="flex flex-col text-center">
                 <h1 className="heading">Projects</h1>
+                <p className="pt-4">See some of the past projects I've worked on.</p>
                 <div className="project-grid grid md:grid-cols-2 md:grid-rows-2 p-4">
                     {/* <ProjectCard /> */}
                     {projectsData.map((project) => (
