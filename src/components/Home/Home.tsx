@@ -2,7 +2,6 @@ import './Home.scss'
 import { useState } from 'react'
 import { motion } from "framer-motion"
 import penguin from '../../assets/images/penguin.gif'
-import About from '../About/About'
 
 const Home = () => {
 

@@ -4,6 +4,7 @@ import About from '../About/About';
 import Skills from './../Skills/Skills'
 import Projects from './../Projects/Projects'
 import './Layout.scss'
+import Footer from '../Footer/Footer';
 
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
                 <Skills />
                 <Projects />
             </div>
+            <Footer />
         </div>
 
     </>

@@ -7,17 +7,17 @@ const projects = [
     {
         id: 2,
         title: 'Shelter Swipe',
-        image: 'lex-heroes.png',
+        image: 'shelter-swipe.png',
     },
     {
         id: 3,
-        title: 'Image Editing Chrome Extension',
-        image: 'lex-heroes.png',
+        title: 'Silver Sonics',
+        image: 'silver-sonics.png',
     },
     {
         id: 4,
-        title: 'Rice Image Classifier',
-        image: 'lex-heroes.png',
+        title: 'Rice Classifier',
+        image: 'rice-classifier.png',
     },
 ];
 
