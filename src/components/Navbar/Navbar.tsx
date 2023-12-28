@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="items-center justify-between md:flex">
                 <Link className="flex items-center ml-4" to='/'>
                     <img className='h-9' src={logo} alt="logo" />
-                    <span className='font-bold ml-2'>Cassidy</span>
+                    <span className='font-bold ml-2'>Cassidy Xu</span>
                 </Link>
 
                 <div className="hs-dropdown">
