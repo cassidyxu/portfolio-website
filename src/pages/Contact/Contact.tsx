@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 import './Contact.scss'
+import Navbar from '../../components/Navbar/Navbar';
 
 const Contact = () => {
 
@@ -24,16 +26,31 @@ const Contact = () => {
 
     return (
         <div>
-            {/* <h1>hi from contact</h1> */}
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="from_name" />
-                <label>Email</label>
-                <input type="email" name="from_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
-            </form>
+            <Navbar />
+            <div className="contact-page p-12 pt-24 flex justify-center items-center">
+                <form ref={form as React.MutableRefObject<HTMLFormElement>} onSubmit={sendEmail} className="w-full md:w-3/4">
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="container flex flex-col">
+                            <label>Name</label>
+                            <input type="text" name="from_name" />
+                        </div>
+                        <div className="container flex flex-col mt-4">
+                            <label>Email</label>
+                            <input type="email" name="from_email" />
+                        </div>
+                        <div className="container message-box flex flex-col mt-4">
+                            <label>Message</label>
+                            <textarea name="message" />
+                        </div>
+                        <motion.div
+                            className="submit-button w-1/2 mt-4 mt-8 rounded-full"
+                            whileHover={{ backgroundColor: '#578eba' }}
+                        >
+                            <input type="submit" value="Send" className='send' />
+                        </motion.div>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,43 @@
+@import '../../App.scss';
+
+.contact-page {
+    color: $secondary-color;
+    font-family: 'Rubik', sans-serif;
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    input {
+        color: black;
+        border-radius: 5px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    textarea {
+        color: black;
+        border-radius: 5px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .submit-button {
+        color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        border-color: white;
+        border-width: 1px;
+        width: 100px;
+
+        .send {
+            color: $secondary-color;
+        }
+
+    }
+
+}
