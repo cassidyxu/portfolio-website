@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Contact.scss'
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -15,9 +17,15 @@ const Contact = () => {
             emailjs.sendForm('service_4vljv3g', 'template_kelt3of', form.current, 'p0l_j0JIxQRnYMlcK')
                 .then((result) => {
                     console.log('Email sent successfully:', result.text);
+                    toast.success('Email sent successfully', { position: toast.POSITION.TOP_RIGHT });
+
+                    if (form.current) {
+                        form.current.reset();
+                    }
                 })
                 .catch((error) => {
                     console.error('Error sending email:', error.text)
+                    toast.error('Error sending email. Please try again.', { position: toast.POSITION.TOP_RIGHT });
                 });
         } else {
             console.error('Form reference is undefined.');
