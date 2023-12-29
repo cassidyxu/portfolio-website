@@ -4,9 +4,10 @@
     background: $secondary-color;
     color: $primary-color;
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: auto;
 
     .container {
-        // width: 420px;
 
         .title {
             font-size: 32px;

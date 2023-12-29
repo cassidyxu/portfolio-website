@@ -7,7 +7,7 @@ import BackButton from '../../../components/BackButton/BackButton'
 
 const LexHeroes = () => {
     return (
-        <div className="lex-heroes h-screen ">
+        <div className="lex-heroes">
             <BackButton />
             <div className="flex flex-col md:flex-row md:space-x-8 justify-center items-center p-16">
                 <img src={monument} className="w-full md:w-450" />
