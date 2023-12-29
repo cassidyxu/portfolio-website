@@ -35,6 +35,12 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 
     const projectImage = projectImages[project.title];
 
+    // const handleButtonTap = () => {
+    //     setTimeout(() => {
+    //         window.location.href = '/lex-heroes';
+    //     }, 1000);
+    // };
+
     return (
         <motion.div
             className="project-card m-2"
@@ -60,7 +66,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: (isHovered || isTapped) ? 1 : 0 }}
                     whileHover={{ backgroundColor: '#578eba' }}
+                    whileTap={{ backgroundColor: '#578eba' }}
                     transition={{ duration: 0.3 }}
+                // onTap={() => handleButtonTap()}
                 >
                     Learn More
                 </motion.button>

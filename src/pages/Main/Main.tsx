@@ -1,10 +1,10 @@
-import Navbar from '../Navbar/Navbar';
-import Home from '../Home/Home';
-import About from '../About/About';
-import Skills from './../Skills/Skills'
-import Projects from './../Projects/Projects'
-import './Layout.scss'
-import Footer from '../Footer/Footer';
+import Navbar from '../../components/Navbar/Navbar';
+import Home from '../../components/Home/Home';
+import About from '../../components/About/About';
+import Skills from '../../components/Skills/Skills'
+import Projects from '../../components/Projects/Projects'
+import './Main.scss'
+import Footer from '../../components/Footer/Footer';
 
 
 const Layout = () => {

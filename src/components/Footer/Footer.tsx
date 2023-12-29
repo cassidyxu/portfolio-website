@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const Footer = () => {
     return (
-        <footer className="footer flex justify-center items-center p-6 pt-12">
+        <footer className="footer flex justify-center items-center p-6 pt-16">
             <div className="flex-col justify-center items-center">
                 <h1 className="text-center">Get in Touch</h1>
                 <div className="flex justify-center space-x-12 pt-6">
