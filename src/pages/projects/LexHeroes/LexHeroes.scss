@@ -3,4 +3,29 @@
 .lex-heroes {
     background: $secondary-color;
     color: $primary-color;
+    font-family: 'Lato', sans-serif;
+
+    .container {
+        // width: 420px;
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 16px;
+        }
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+
+
 }

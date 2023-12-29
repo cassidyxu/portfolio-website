@@ -59,36 +59,6 @@ const Contact = () => {
     };
 
     return (
-        // <div>
-        //     <Navbar />
-        //     <div className="contact-page p-12 pt-24 flex flex-col justify-center items-center">
-        //         <img src={penguin} className="h-32" />
-        //         <h1 className="mb-8">Contact me using the form below!</h1>
-        //         <form ref={form as React.MutableRefObject<HTMLFormElement>} onSubmit={sendEmail} className="w-full md:w-3/4">
-        //             <div className="flex flex-col justify-center items-center">
-        //                 <div className="container flex flex-col">
-        //                     <label>Name</label>
-        //                     <input type="text" name="from_name" />
-        //                 </div>
-        //                 <div className="container flex flex-col mt-4">
-        //                     <label>Email</label>
-        //                     <input type="email" name="from_email" />
-        //                 </div>
-        //                 <div className="container message-box flex flex-col mt-4">
-        //                     <label>Message</label>
-        //                     <textarea name="message" />
-        //                 </div>
-        //                 <motion.div
-        //                     className="submit-button w-1/2 mt-4 mt-8 rounded-full"
-        //                     whileHover={{ backgroundColor: '#578eba' }}
-        //                 >
-        //                     <input type="submit" value="Send" className='send' />
-        //                 </motion.div>
-        //             </div>
-        //         </form>
-        //     </div>
-        // </div>
-
         <div>
             <Navbar />
             <div className="contact-page p-12 h-screen flex flex-col justify-center items-center">
