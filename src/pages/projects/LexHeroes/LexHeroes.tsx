@@ -18,10 +18,11 @@ const LexHeroes = () => {
                         of Lexington to a establish a comprehensive public database of all memorials in Lexington
                         to commemorate citizens, events, and places.
                     </p>
-                    <h2 className="description text-center pt-6">
+                    <h2 className="text-center pt-6">
                         Lexington Memorial Pathfinder
                     </h2>
-                    <div className="pt-2">
+                    <p className="mini-description text-center">Find the shortest route between memorials you want to visit.</p>
+                    <div className="pt-4">
                         <a
                             href="https://brainana.github.io/LexMemorialPathfinder/"
                             target="_blank"
