@@ -14,10 +14,32 @@ const Contact = () => {
         e.preventDefault();
 
         if (form.current) {
+
+            const formData = new FormData(form.current);
+            let isValid = true;
+
+            formData.forEach((value) => {
+                if (!value) {
+                    isValid = false;
+                    return;
+                }
+            });
+
+            if (!isValid) {
+                toast.error('Please fill in all fields.', {
+                    position: toast.POSITION.TOP_RIGHT,
+                    autoClose: 3000,
+                });
+                return;
+            }
+
             emailjs.sendForm('service_4vljv3g', 'template_kelt3of', form.current, 'p0l_j0JIxQRnYMlcK')
                 .then((result) => {
                     console.log('Email sent successfully:', result.text);
-                    toast.success('Email sent successfully', { position: toast.POSITION.TOP_RIGHT });
+                    toast.success('Email sent successfully', {
+                        position: toast.POSITION.TOP_RIGHT,
+                        autoClose: 3000,
+                    });
 
                     if (form.current) {
                         form.current.reset();
@@ -25,7 +47,10 @@ const Contact = () => {
                 })
                 .catch((error) => {
                     console.error('Error sending email:', error.text)
-                    toast.error('Error sending email. Please try again.', { position: toast.POSITION.TOP_RIGHT });
+                    toast.error('Error sending email. Please try again.', {
+                        position: toast.POSITION.TOP_RIGHT,
+                        autoClose: 3000,
+                    });
                 });
         } else {
             console.error('Form reference is undefined.');
