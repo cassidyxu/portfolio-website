@@ -43,7 +43,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 
     return (
         <motion.div
-            className="project-card m-2"
+            className="project-card max-w-400 m-2"
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
             onTap={() => setIsTapped(!isTapped)}

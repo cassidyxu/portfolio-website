@@ -10,6 +10,7 @@ import penguin from '../../assets/images/penguin2.png'
 const Contact = () => {
 
     const form = useRef<HTMLFormElement>(null);
+    const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -34,7 +35,7 @@ const Contact = () => {
                 return;
             }
 
-            emailjs.sendForm('service_4vljv3g', 'template_kelt3of', form.current, 'p0l_j0JIxQRnYMlcK')
+            emailjs.sendForm('service_4vljv3g', 'template_kelt3of', form.current, apiKey)
                 .then((result) => {
                     console.log('Email sent successfully:', result.text);
                     toast.success('Email sent successfully', {

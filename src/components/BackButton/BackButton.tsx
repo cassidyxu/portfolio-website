@@ -13,7 +13,7 @@ const BackButton = () => {
             onClick={goBack}
             whileHover={{ color: '#578eba' }}
         >
-            Go Back
+            &#8592; Go Back
         </motion.button>
     )
 
